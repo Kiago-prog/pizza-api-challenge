@@ -11,7 +11,7 @@ This project follows the MVC pattern and uses SQLAlchemy with Flask-Migrate for 
 git clone git@github.com:Alicia-Natasha/pizza-api-challenge.git
 cd pizza-api-challenge
 
-2. Install dependencies:
+2. **Install dependencies**:
 
 pipenv install flask flask_sqlalchemy flask_migrate flask-cors
 pipenv shell
@@ -37,6 +37,7 @@ flask run
 ## Routes Summary
 
 ### Restaurants
+
 GET /restaurants
 Returns all restaurants
 
@@ -50,10 +51,12 @@ Deletes a restaurant and associated RestaurantPizzas
 404 if not found
 
 ### Pizzas
+
 GET /pizzas
 Returns all pizzas
 
 ### RestaurantPizzas (Join Table)
+
 POST /restaurant_pizzas
 Creates a RestaurantPizza
 Request body:
@@ -69,11 +72,13 @@ Request body:
 { "errors": ["Price must be between 1 and 30"] }
 
 ## Validation Rules
+
 RestaurantPizza.price must be between 1 and 30 (inclusive)
 
 If any input fails validation, the API returns a 400 with error messages
 
 ## Testing with Postman
+
 Open Postman
 
 Import challenge-1-pizzas.postman_collection.json
@@ -81,6 +86,7 @@ Import challenge-1-pizzas.postman_collection.json
 Test each route (GET, POST, DELETE)
 
 ## Dependencies
+
 Uses Flask + SQLAlchemy + Flask-Migrate
 
 Follows MVC pattern (models/, controllers/, app.py)
@@ -88,6 +94,9 @@ Follows MVC pattern (models/, controllers/, app.py)
 Fully RESTful API — no frontend required
 
 ## Author
+
 Alicia Natasha
 ---
 ## License
+
+This project is licensed under the MIT License – see the [LICENSE](./LICENSE) file for details.

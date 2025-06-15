@@ -21,3 +21,5 @@ def create_app():
     app.register_blueprint(restaurant_pizza_bp)
 
     return app
+
+app = create_app()

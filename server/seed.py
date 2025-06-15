@@ -1,8 +1,9 @@
-from server.models import db
-from server.models.restaurant import Restaurant
-from server.models.pizza import Pizza
-from server.models.restaurant_pizza import RestaurantPizza
-from server.app import create_app
+from models import db
+from models.restaurant import Restaurant
+from models.pizza import Pizza
+from models.restaurant_pizza import RestaurantPizza
+from app import create_app
+
 
 app = create_app()
 

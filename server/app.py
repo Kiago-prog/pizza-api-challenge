@@ -1,6 +1,7 @@
 from flask import Flask
 from flask_migrate import Migrate
 from flask_cors import CORS
+
 from .models import db
 from .controllers.restaurant_controller import restaurant_bp
 from .controllers.pizza_controller import pizza_bp

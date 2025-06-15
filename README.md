@@ -8,29 +8,29 @@ This project follows the MVC pattern and uses SQLAlchemy with Flask-Migrate for 
 
 1. **Clone the repo:**
 
-git clone git@github.com:Alicia-Natasha/pizza-api-challenge.git
+git clone <github url>
 cd pizza-api-challenge
 
-2. **Install dependencies**:
+2. **Install dependencies:**
 
 pipenv install flask flask_sqlalchemy flask_migrate flask-cors
 pipenv shell
 
-3. Set Flask environment:
+3. **Set Flask environment:**
 
 export FLASK_APP=server.app:create_app
 
-4. Run migrations:
+4. **Run migrations:**
 
 flask db init
 flask db migrate -m "Initial migration"
 flask db upgrade
 
-5. Seed the database:
+5. **Seed the database:**
 
 python server/seed.py
 
-6. Run the server:
+6. **Run the server:**
 
 flask run
 
